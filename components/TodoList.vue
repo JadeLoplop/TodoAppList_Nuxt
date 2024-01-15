@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import { useTodoStore } from '@/stores/todo';
-import TodoDetails from '@/components/TodoDetails.vue';
+import { useTodoStore } from '@stores/todo';
+import TodoDetails from '@components/TodoDetails.vue';
 export default {
     components: {
         TodoDetails

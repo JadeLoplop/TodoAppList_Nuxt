@@ -7,11 +7,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "devDependencies": {
     "nuxt": "^3.9.1",
     "vite-plugin-vuetify": "^2.0.1",
+    "vitest": "^1.2.0",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.10"

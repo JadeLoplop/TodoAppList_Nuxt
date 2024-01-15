@@ -3,16 +3,16 @@ import { defineStore } from "pinia";
 export const useTodoStore = defineStore("todoStore", {
     state: () => ({
         todos: [
-            {id: 1, title: "Wake up at 5am", isComplete: false}
+            { id: 1, title: "Wake up at 5am", isComplete: false }
 
         ],
     }),
     getters: {
-        fetchTodos: (state) =>{
+        fetchTodos: (state) => {
             return state.todos;
         },
 
-        fetchTodosIncomplete: (state) =>{
+        fetchTodosIncomplete: (state) => {
             return state.todos.filter(t => {
                 return t.isComplete == false
             });
@@ -47,11 +47,15 @@ export const useTodoStore = defineStore("todoStore", {
             todo.isComplete = !todo?.isComplete
         },
 
-        removeAll(isComplete: boolean){
-            this.todos = this.todos.filter(t => {
-                return t.isComplete !== isComplete
-            });
+        removeAll(isComplete?: boolean | null) {
+            if (isComplete === null) {
+                this.todos = [];
+            } else {
+                this.todos = this.todos.filter(t => {
+                    return t.isComplete !== isComplete
+                });
+            }
         }
     }
-    
+
 })

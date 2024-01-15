@@ -1,6 +1,11 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import path from 'path'
 export default defineNuxtConfig({
   //...
+  alias: {
+    '@components': path.resolve(__dirname, './components'),
+    '@stores': path.resolve(__dirname, './stores'),
+  },
   build: {
     transpile: ['vuetify'],
   },
@@ -24,4 +29,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  
 })

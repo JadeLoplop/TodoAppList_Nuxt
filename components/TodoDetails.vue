@@ -90,7 +90,7 @@
 </template>
 
 <script>
-import { useTodoStore } from '@/stores/todo';
+import { useTodoStore } from '@stores/todo';
 
 export default {
     setup() {
