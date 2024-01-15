@@ -76,7 +76,7 @@
                                     {{ todo.title }}
                                 </v-list-item-title>
                             </v-col>
-                            <v-col cols="2">
+                            <v-col cols="2" class="d-flex justify-space-between ">
                                 <v-btn icon color="red" @click="todoStore.deleteTodo(todo.id)">
                                     <v-icon>mdi-delete</v-icon>
                                 </v-btn>
