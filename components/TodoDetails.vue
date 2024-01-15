@@ -8,7 +8,9 @@
                         <v-spacer></v-spacer>
                         <v-hover>
                             <template v-slot:default="{ isHovering, props }">
-                                <v-btn class="mr-3" size="x-small" v-bind="props" :color="isHovering ? 'red' : 'default'" @click="todoStore.removeAll(false)">
+                                <v-btn class="mr-3" size="x-small" v-bind="props"
+                                :color="isHovering ? 'red' : 'default'"
+                                @click="todoStore.removeAll(false)">
                                     Remove All
                                 </v-btn>
                             </template>
@@ -48,7 +50,9 @@
                         <v-spacer></v-spacer>
                         <v-hover>
                             <template v-slot:default="{ isHovering, props }">
-                                <v-btn class="mr-3" size="x-small" v-bind="props" :color="isHovering ? 'red' : 'default'"  @click="todoStore.removeAll(true)">
+                                <v-btn class="mr-3" size="x-small" v-bind="props"
+                                :color="isHovering ? 'red' : 'default'"
+                                @click="todoStore.removeAll(true)">
                                     Remove All
                                 </v-btn>
                             </template>
@@ -86,7 +90,7 @@
 </template>
 
 <script>
-import { useTodoStore } from '../../stores/todo';
+import { useTodoStore } from '@/stores/todo';
 
 export default {
     setup() {
