@@ -33,3 +33,27 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to access t
 - **layouts/:** Layout components for different pages.
 - **pages/:** Vue components representing pages.
 - **store/:** State management using Pinia.
+
+## 4. Architecture
+The Todo List Web App follows a modular architecture, separating components, pages, and state management using Pinia for efficient and scalable development.
+
+## 5. Dependencies
+- **nuxt:** "^3.9.1"
+- **vite-plugin-vuetify:** "^2.0.1"
+- **vue:** "^3.4.10"
+- **vue-router:** "^4.2.5"
+- **vuetify:** "^3.4.10"
+
+## 8. Pages and Routing
+As per the default Nuxt.js project structure, pages are automatically created based on the files inside the pages directory. Nuxt uses a file-system-based routing system, where each .vue file in the pages directory corresponds to a route in your application.
+
+## 9. Styling
+The application utilizes Vuetify for styling. Global styles are managed through the application's stylesheets.
+
+## 10. Testing with Vitest
+Vitest is the testing framework used in this project to ensure the reliability of the Todo List Web App. It provides a simple and efficient way to write and execute tests for Vue.js applications.
+
+### Running Tests
+```bash
+yarn run test
+```
