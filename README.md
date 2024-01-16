@@ -57,11 +57,11 @@ Vitest is the testing framework used in this project to ensure the reliability o
 ```bash
 yarn run test
 ```
-## 11. Deployed Links
+## 9. Deployed Links
 - **AWS S3 Bucket:** [http://static-todo-list-web-app.s3-website-ap-southeast-1.amazonaws.com/](http://static-todo-list-web-app.s3-website-ap-southeast-1.amazonaws.com/)
 - **Vercel:** [https://todo-app-list-nuxt.vercel.app/](https://todo-app-list-nuxt.vercel.app/)
 
-## 12. Contact Information
+## 10. Contact Information
 For any questions or concerns, contact the project maintainer:
 
 **Maintainer Name:** Bryan Jade Loplop  
